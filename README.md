@@ -1,5 +1,5 @@
-# currency_converter
-A currency convertor API
+
+# A currency convertor API
 
 ## Prerequisites
 
