@@ -33,6 +33,6 @@ uvicorn main:app --reload
 
 ## API Endpoints
 
-`/`: this is the index point
-`/all`: this retrieves all currencies supported by the API
-`/convert`: this converts one currency into another
+- `/`: this is the index point
+- `/all`: this retrieves all currencies supported by the API
+- `/convert`: this converts one currency into another
