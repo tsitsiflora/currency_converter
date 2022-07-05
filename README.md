@@ -20,10 +20,19 @@ python3 -m venv venv
 ```bash
 pip3 install -R requirements.txt
 ```
-5. Make a file call ACCESS_KEY.py and put your API key in there
+5. Make a file call ACCESS_KEY.py and put your API key in there. For example:
+```
+YOUR_ACCESS_KEY = "randomstringhere"
+```
 6. Start the API using
 ```bash
 uvicorn main:app --reload
 ```
 7. The API will run at `127.0.0.1:8000`. You can visit the address in your browser
 8. You can use the docs at `127.0.0.1:8000/docs` to test the API or use `curl`
+
+## API Endpoints
+
+`/`: this is the index point
+`/all`: this retrieves all currencies supported by the API
+`/convert`: this converts one currency into another

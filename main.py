@@ -28,7 +28,6 @@ def calculate_receiver_amount(convert: Convert) -> Decimal:
 
     rate = get_rate(convert.sender_currency, convert.receiver_currency)
     # we can set and alter decimal precision setting however we want
-    # https://docs.python.org/3.7/library/decimal.html#module-decimal
     getcontext().prec = 6
     return Decimal(rate) * Decimal(convert.sender_amount)
 
